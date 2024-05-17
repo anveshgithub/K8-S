@@ -15,5 +15,8 @@ spec:
       containers:
       - name: myapp
         image: ushkamalla/test:latest
-        ports:8083
+        ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: my-private-repo
+
